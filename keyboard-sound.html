@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body
+{
+    margin:0;
+    padding:0;
+
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  align-items:center;
+
+}
+
+.flex-container > div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<AUDIO src=""></AUDIO>
+<div class="flex-container">
+  <div onclick="f('a')" id="A">A</div>
+  <div onclick="f('s')" id="S">S</div>
+  <div onclick="f('d')" id="D">D</div>  
+  <div onclick="f('f')" id="F">F</div>
+  <div onclick="f('g')" id="G">G</div>
+  <div onclick="f('h')" id="H">H</div>  
+  <div onclick="f('j')" id="J">J</div>
+  <div onclick="f('k')" id="K">K</div>
+  <div onclick="f('l')" id="L">L</div>
+</div>
+
+
+<script>
+  window.addEventListener(
+    "keydown", function(e)
+        {
+          var x = e.key;
+
+
+          if (x=="A")
+          f('a');
+
+          if(x=="S")
+          f('s');
+
+          if(x=="D")
+          f('d');
+
+          if(x=="F")
+          f('f');
+
+          if(x=="G")
+          f('g');
+
+          if(x=="H")
+          f('h');
+
+          if(x=="J")
+          f('j');
+
+          if(x=="K")
+          f('k');
+
+          if(x=="L")
+          f('l');
+        }
+  );
+
+  var y, aud=document.getElementsByTagName("audio")[0];
+  function f(y)
+  {
+    switch (y)
+    {
+      case 'a':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('A').style.backgroundColor = "violet";
+      break;
+    
+      case 's':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('S').style.backgroundColor = "violet";
+      break;
+
+      
+      case 'd':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('D').style.backgroundColor = "violet";
+      break;
+
+    
+      case 'f':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('F').style.backgroundColor = "violet";
+      break;
+      
+
+
+      case 'g':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('G').style.backgroundColor = "violet";
+      break;
+      
+
+      
+      case 'h':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('H').style.backgroundColor = "violet";
+      break;
+    
+
+      
+      case 'j':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('J').style.backgroundColor = "violet";
+      break;
+      
+
+      
+      case 'k':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('K').style.backgroundColor = "violet";
+      break;
+      
+
+      
+      case 'l':
+      aud.src = "1.mp3";
+      aud.play();
+      //document.getElementById('L').style.backgroundColor = "violet";
+      break;
+    
+    }
+  }
+</script>
+
+</body>
+</html>
